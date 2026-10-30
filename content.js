@@ -34,9 +34,9 @@ const siteData = {
     {
       author: "Alex Morgan",
       time: "pirms 2 stundām",
-      text: "Klusā rītā piekrastē ir kaut kas īpašs. Esmu pateicīgs par nesteidzīgām dienām un labu kompāniju. 🌊",
+      text: "YO 67 so funny",
       image:
-        "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1100&q=85",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjEk62jL3aer2-UKoHT8w3dbY-LJv49wiQ6w_Lxz7se_MMdWd8J0hIzAi7&s=10",
       likes: 126,
       comments: [
         {

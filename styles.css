@@ -224,9 +224,8 @@ a {
     height: 245px;
     background:
         linear-gradient(rgba(49, 37, 27, 0.32), rgba(49, 37, 27, 0.54)),
-        url("https://images.unsplash.com/photo-1500534623283-312aade485b7?w=1400&q=80")
-            center/cover;
-    filter: sepia(0.7) saturate(0.58) contrast(0.96);
+        url("farmland.jpg") center/cover;
+    filter: sepia(0.9) saturate(0.8) contrast(0.96);
 }
 
 .cover-photo::before,
@@ -407,11 +406,6 @@ h2 {
 
 .sidebar,
 .feed {
-    display: grid;
-    gap: 20px;
-}
-
-#postList {
     display: grid;
     gap: 20px;
 }
@@ -610,8 +604,7 @@ h2 {
 
 .post-image {
     display: block;
-    width: calc(100% - 48px);
-    margin: 0 24px;
+    width: 100%;
     max-height: 430px;
     object-fit: cover;
     filter: sepia(0.5) saturate(0.72);
@@ -805,12 +798,6 @@ h2 {
     .comments {
         padding-right: 19px;
         padding-left: 19px;
-    }
-
-    .post-image {
-        width: calc(100% - 38px);
-        margin-right: 19px;
-        margin-left: 19px;
     }
 
     .post-actions {
