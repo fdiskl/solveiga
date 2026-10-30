@@ -60,7 +60,7 @@ function renderPosts() {
       ${post.image ? `<img class="post-image" src="${post.image}" alt="Attēls, ko kopīgoja ${post.author}" loading="lazy">` : ""}
       <div class="post-stats"><span>♡ ${post.likes} atzīmes Patīk</span><span>${post.comments.length} komentāri</span></div>
       <div class="post-actions">
-        <button class="post-action like-button" data-index="${index}">♡ Patīk</button>
+        <button class="post-action like-button"">♡ Patīk</button>
         <button class="post-action">◌ Komentēt</button>
         <button class="post-action">↗ Kopīgot</button>
       </div>
