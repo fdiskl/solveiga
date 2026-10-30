@@ -411,6 +411,11 @@ h2 {
     gap: 20px;
 }
 
+#postList {
+    display: grid;
+    gap: 20px;
+}
+
 .card {
     padding: 24px;
 }
@@ -605,7 +610,8 @@ h2 {
 
 .post-image {
     display: block;
-    width: 100%;
+    width: calc(100% - 48px);
+    margin: 0 24px;
     max-height: 430px;
     object-fit: cover;
     filter: sepia(0.5) saturate(0.72);
@@ -799,6 +805,12 @@ h2 {
     .comments {
         padding-right: 19px;
         padding-left: 19px;
+    }
+
+    .post-image {
+        width: calc(100% - 38px);
+        margin-right: 19px;
+        margin-left: 19px;
     }
 
     .post-actions {

@@ -10,15 +10,15 @@
 */
 const siteData = {
   profile: {
-    name: "Alex Morgan",
-    handle: "@alexmorgan",
+    name: "Solveiga",
+    handle: "@solveiga",
     avatar: "solveiga.jpg",
-    bio: "Photographer, coffee enthusiast, and weekend hiker. Always looking for the next beautiful view.",
-    born: "Born January 14, 1994",
-    location: "Lives in Portland, Oregon",
-    family: "Married to Jamie Morgan",
-    work: "Works at Northstar Creative",
-    friends: 842,
+    bio: "TODO",
+    born: "TODO",
+    location: "TODO",
+    family: "TODO",
+    work: "TODO",
+    friends: 5,
   },
 
   gallery: [
