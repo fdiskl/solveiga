@@ -3,67 +3,123 @@
 
   Varat mainīt:
   - profila informāciju un avatāru
-  - galerijas attēlu URL adreses
+  - draugu vārdus un attēlu URL adreses
   - ierakstus, attēlus, atzīmes Patīk un komentārus
 
   Ierakstam bez attēla izmantojiet: image: ""
 */
 const siteData = {
   profile: {
-    name: "Solveiga",
-    handle: "@solveiga",
+    name: "Solveiga Johandottira",
+    handle: "@solveiga_joh",
     avatar: "solveiga.jpg",
-    bio: "TODO",
-    born: "TODO",
-    location: "TODO",
-    family: "TODO",
-    work: "TODO",
-    friends: 5,
+    bio: "Vienkārša lauku čiepa, kam patīk ballēties ik pa laikam 🤪\n(❤️ @PērsGints ❤️)",
+    born: "24.02.1848",
+    location: "Hedale, Norvēģija",
+    family: "Pērs Gints",
+    work: "Zemniece",
   },
 
-  gallery: [
-    "https://images.unsplash.com/photo-1500534623283-312aade485b7?w=400&q=80",
-    "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=400&q=80",
-    "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=400&q=80",
-    "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&q=80",
-    "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&q=80",
-    "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?w=400&q=80",
+  friends: [
+    {
+      name: "Johans Mugnossons",
+      image: "father.jpg",
+    },
+    {
+      name: "Astrida Lunda",
+      image: "mother.jpg",
+    },
+    {
+      name: "Helga",
+      image: "helga.jpg",
+    },
+    {
+      name: "Pērs Gints",
+      image: "peerGynt.jpg",
+    },
   ],
 
   posts: [
     {
-      author: "Alex Morgan",
-      time: "pirms 2 stundām",
-      text: "YO 67 so funny",
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjEk62jL3aer2-UKoHT8w3dbY-LJv49wiQ6w_Lxz7se_MMdWd8J0hIzAi7&s=10",
-      likes: 126,
+      author: "Solveiga",
+      time: "pirms 80 gadiem",
+      title: "Helgas dzimšana",
+      desc: "Man tagad ir mazā māsa! Viņa izskatās tik mīļi! Vecāki viņu nosauca par Helgu. #lielasmasasaktivitates",
+      image: "helga-modified.jpg",
+      likes: 9,
       comments: [
         {
-          author: "Jamie Morgan",
-          text: "Klātbūtnē šis skats bija vēl labāks!",
-          avatar:
-            "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&q=80",
+          author: "Johans Mugnossons",
+          text: "Mūsu mazā meitiņa ir tik skaista! Esmu ļoti laimīgs, ka mūsu ģimenē ir ienākusi vēl viena princese. ❤️",
+          avatar: "father.jpg",
         },
         {
-          author: "Taylor Reed",
-          text: "Brīnišķīgi skaisti, Aleks!",
-          avatar:
-            "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&q=80",
+          author: "Astrida Lunda",
+          text: "Mana mīļā Helga! Es jau zinu, ka tu un Solveiga būsiet labākās māsas.",
+          avatar: "mother.jpg",
         },
       ],
     },
     {
-      author: "Alex Morgan",
-      time: "Vakar",
-      text: "Daži kadri no pagājušās nedēļas nogales pārgājiena. Kurš tev patīk vislabāk?",
-      image:
-        "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1100&q=85",
-      likes: 89,
+      author: "Solveiga",
+      time: "pirms 50 gadiem",
+      title: "Pagājušās nedēļas nogales pārgājiens",
+      desc: "Pērs Gints mani uzlūdza uz deju Hegstadē, bet man viņam būs jāatsaka, jo man Tēvs neatļāva. Cik žēl, viņs bija tik karsts! @PērsGints (jā, TAS Pērs Gints) mani uzlūdza uz deju! Diemžēl man tēvs neļāva. Cik žēl, viņs bija tik uzbudinošs!",
+      image: "peer_solveig_dance.jpg",
+      likes: 19,
       comments: [
         {
-          author: "Chris Patel",
-          text: "Kalnu atspulgs ir satriecošs.",
+          author: "TODO",
+          text: "todo",
+          avatar:
+            "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80",
+        },
+      ],
+    },
+
+    {
+      author: "Solveiga",
+      time: "pirms 50 gadiem",
+      title: "Pagājušās nedēļas nogales pārgājiens",
+      desc: "Tas Pērs aizskrēja ar Ingrīdu! Cita vīra Līgavu! Tas nelietis!",
+      image: "",
+      likes: 19,
+      comments: [
+        {
+          author: "TODO",
+          text: "todo",
+          avatar:
+            "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80",
+        },
+      ],
+    },
+    {
+      author: "Solveiga",
+      time: "pirms 50 gadiem",
+      title: "Pagājušās nedēļas nogales pārgājiens",
+      desc: "Es nevaru bez tā Pēra noturēties. Helga man no viņa atnesa skaistu sudraba pogu, un daudzus skaistus vārdus teica. Viņs tomēr arī mani mīl!",
+      image: "",
+      likes: 19,
+      comments: [
+        {
+          author: "TODO",
+          text: "todo",
+          avatar:
+            "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80",
+        },
+      ],
+    },
+    {
+      author: "Solveiga",
+      time: "pirms 50 gadiem",
+      title: "Pagājušās nedēļas nogales pārgājiens",
+      desc: "Es pametu savus vecākus un iešu dzīvot pie sava mīļā izsumtā Pēra mežā. Es viņu ļoti mīlu, un dzīvošu ar viņu kopā tagad! #woohoo",
+      image: "",
+      likes: 19,
+      comments: [
+        {
+          author: "TODO",
+          text: "todo",
           avatar:
             "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80",
         },

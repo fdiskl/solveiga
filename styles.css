@@ -454,6 +454,7 @@ h2 {
     font-size: 20px;
     font-style: italic;
     line-height: 1.35;
+    overflow-wrap: anywhere;
 }
 
 .detail-list {
@@ -475,13 +476,17 @@ h2 {
     text-align: center;
 }
 
-.photo-grid {
+.friend-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 8px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 13px 10px;
 }
 
-.photo-grid img {
+.friend {
+    min-width: 0;
+}
+
+.friend img {
     display: block;
     width: 100%;
     aspect-ratio: 1;
@@ -493,11 +498,24 @@ h2 {
         transform 180ms ease;
 }
 
+.friend span {
+    display: block;
+    overflow: hidden;
+    margin-top: 5px;
+    color: var(--walnut);
+    font-family: var(--font-display);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.1;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 #profileName {
     margin-top: 20px;
 }
 
-.photo-grid img:hover {
+.friend img:hover {
     filter: sepia(0.28) saturate(0.82);
     transform: translateY(-2px);
 }
@@ -600,6 +618,19 @@ h2 {
     margin-bottom: 0;
     color: #443426;
     line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+.post-title {
+    padding: 0 24px;
+    margin: 0 0 6px;
+    color: var(--walnut);
+    font-size: 29px;
+    line-height: 1.1;
+}
+
+.post-title + .post-text {
+    padding-bottom: 18px;
 }
 
 .post-image {

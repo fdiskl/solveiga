@@ -3,6 +3,16 @@ const posts = siteData.posts;
 
 const $ = (selector) => document.querySelector(selector);
 
+function renderText(value) {
+  return String(value)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;")
+    .replace(/\\n|\r?\n/g, "<br>");
+}
+
 function renderProfile() {
   const avatarElements = ["#profileAvatar", "#composerAvatar", ".avatar-small"];
   avatarElements.forEach((selector) => {
@@ -11,29 +21,40 @@ function renderProfile() {
   });
   $("#profileName").textContent = profile.name;
   $("#profileHandle").textContent = profile.handle;
-  $("#profileBio").textContent = profile.bio;
+  $("#profileBio").innerHTML = renderText(profile.bio);
   $("#profileBorn").textContent = profile.born;
   $("#profileLocation").textContent = profile.location;
   $("#profileFamily").textContent = profile.family;
   $("#profileWork").textContent = profile.work;
-  $("#friendCount").textContent = profile.friends;
+  $("#friendCount").textContent = siteData.friends.length;
   document.title = `${profile.name} | Sociālais profils`;
-  $("#photoGrid").innerHTML = siteData.gallery.map((photo) => `<img src="${photo}" alt="Profila galerijas attēls" loading="lazy">`).join("");
+  $("#friendGrid").innerHTML = siteData.friends
+    .map(
+      (friend) => `
+        <div class="friend">
+          <img src="${friend.image}" alt="${friend.name}" loading="lazy">
+          <span>${renderText(friend.name)}</span>
+        </div>
+      `,
+    )
+    .join("");
 }
 
 function avatarStyle(url) {
-  return `style="background-image:url('${url}')"`
+  return `style="background-image:url('${url}')"`;
 }
 
 function renderPosts() {
-  $("#postList").innerHTML = posts.map((post, index) => `
+  $("#postList").innerHTML = posts
+    .map(
+      (post, index) => `
     <article class="card post">
       <div class="post-header">
         <div class="avatar" ${avatarStyle(profile.avatar)}></div>
         <div class="post-meta"><strong>${post.author}</strong><span>${post.time} · ◉</span></div>
         <button class="post-menu" aria-label="Ieraksta opcijas">•••</button>
       </div>
-      <p class="post-text">${post.text}</p>
+      ${post.desc || post.text ? `<p class="post-text">${renderText(post.desc || post.text)}</p>` : ""}
       ${post.image ? `<img class="post-image" src="${post.image}" alt="Attēls, ko kopīgoja ${post.author}" loading="lazy">` : ""}
       <div class="post-stats"><span>♡ ${post.likes} atzīmes Patīk</span><span>${post.comments.length} komentāri</span></div>
       <div class="post-actions">
@@ -42,18 +63,24 @@ function renderPosts() {
         <button class="post-action">↗ Kopīgot</button>
       </div>
       <div class="comments">
-        ${post.comments.map((comment) => `
+        ${post.comments
+          .map(
+            (comment) => `
           <div class="comment">
             <div class="avatar" ${avatarStyle(comment.avatar)}></div>
-            <div class="comment-bubble"><strong>${comment.author}</strong>${comment.text}</div>
-          </div>`).join("")}
+            <div class="comment-bubble"><strong>${renderText(comment.author)}</strong>${renderText(comment.text)}</div>
+          </div>`,
+          )
+          .join("")}
         <form class="comment-form" data-index="${index}">
           <input aria-label="Rakstīt komentāru" placeholder="Rakstīt komentāru..." required>
           <button type="submit">Publicēt</button>
         </form>
       </div>
     </article>
-  `).join("");
+  `,
+    )
+    .join("");
 }
 
 document.addEventListener("click", (event) => {
