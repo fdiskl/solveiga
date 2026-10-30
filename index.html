@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alex Morgan | Social Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="#" aria-label="Home">
+          <span class="brand-mark">f</span>
+          <span class="brand-name">folio</span>
+        </a>
+        <label class="search">
+          <span aria-hidden="true">⌕</span>
+          <input type="search" placeholder="Search Folio" />
+        </label>
+        <nav class="top-actions" aria-label="Main navigation">
+          <button class="icon-button" aria-label="Notifications">♡</button>
+          <button class="icon-button" aria-label="Messages">✉</button>
+          <button class="avatar avatar-small" aria-label="Open profile menu"></button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <section class="profile-card">
+        <div class="cover-photo"></div>
+        <div class="profile-header">
+          <div class="profile-identity">
+            <div class="avatar avatar-large" id="profileAvatar"></div>
+            <div>
+              <p class="eyebrow">Personal profile</p>
+              <h1 id="profileName"></h1>
+              <p class="muted" id="profileHandle"></p>
+            </div>
+          </div>
+          <div class="profile-actions">
+            <button class="button button-primary" type="button">＋ Add story</button>
+          </div>
+        </div>
+        <nav class="profile-tabs" aria-label="Profile sections">
+          <a class="active" href="#posts">Posts</a>
+          <a href="#about">About</a>
+          <a href="#photos">Photos</a>
+          <a href="#friends">Friends <span id="friendCount"></span></a>
+        </nav>
+      </section>
+
+      <div class="content-grid">
+        <aside class="sidebar">
+          <section class="card intro-card" id="about">
+            <div class="section-heading">
+              <h2>Intro</h2>
+              <button class="text-button">Edit</button>
+            </div>
+            <p class="bio" id="profileBio"></p>
+            <div class="detail-list">
+              <div><span class="detail-icon">◉</span><span id="profileBorn"></span></div>
+              <div><span class="detail-icon">⌂</span><span id="profileLocation"></span></div>
+              <div><span class="detail-icon">♡</span><span id="profileFamily"></span></div>
+              <div><span class="detail-icon">▣</span><span id="profileWork"></span></div>
+            </div>
+            <button class="button button-wide button-soft">Edit details</button>
+          </section>
+
+          <section class="card photos-card" id="photos">
+            <div class="section-heading">
+              <h2>Photos</h2>
+              <a class="text-button" href="#photos">See all photos</a>
+            </div>
+            <div class="photo-grid" id="photoGrid"></div>
+          </section>
+
+          <p class="footer-note">Privacy · Terms · Help · Folio © 2025</p>
+        </aside>
+
+        <section class="feed" id="posts">
+          <section class="card composer">
+            <div class="composer-row">
+              <div class="avatar avatar-medium" id="composerAvatar"></div>
+              <div class="composer-input">What’s on your mind?</div>
+            </div>
+            <div class="composer-actions">
+              <button class="composer-action" type="button">▣ <span>Photo/video</span></button>
+              <button class="composer-action" type="button">☺ <span>Feeling/activity</span></button>
+              <button class="composer-action" type="button">✦ <span>Life event</span></button>
+            </div>
+          </section>
+          <div id="postList"></div>
+        </section>
+      </div>
+    </main>
+
+    <script src="content.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
