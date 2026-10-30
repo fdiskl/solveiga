@@ -511,6 +511,17 @@ h2 {
     white-space: nowrap;
 }
 
+.friend small {
+    display: block;
+    overflow: hidden;
+    margin-top: 3px;
+    color: var(--muted-ink);
+    font-size: 10px;
+    line-height: 1.3;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 #profileName {
     margin-top: 20px;
 }

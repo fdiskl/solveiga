@@ -34,6 +34,7 @@ function renderProfile() {
         <div class="friend">
           <img src="${friend.image}" alt="${friend.name}" loading="lazy">
           <span>${renderText(friend.name)}</span>
+          ${friend.description ? `<small>${renderText(friend.description)}</small>` : ""}
         </div>
       `,
     )
@@ -46,6 +47,7 @@ function avatarStyle(url) {
 
 function renderPosts() {
   $("#postList").innerHTML = posts
+    .reverse()
     .map(
       (post, index) => `
     <article class="card post">

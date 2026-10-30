@@ -3,7 +3,7 @@
 
   Varat mainīt:
   - profila informāciju un avatāru
-  - draugu vārdus un attēlu URL adreses
+  - draugu vārdus, aprakstus un attēlu URL adreses
   - ierakstus, attēlus, atzīmes Patīk un komentārus
 
   Ierakstam bez attēla izmantojiet: image: ""
@@ -23,18 +23,22 @@ const siteData = {
   friends: [
     {
       name: "Johans Mugnossons",
+      description: "Tēvs",
       image: "father.jpg",
     },
     {
       name: "Astrida Lunda",
+      description: "Māte",
       image: "mother.jpg",
     },
     {
       name: "Helga",
+      description: "Mana māsa",
       image: "helga.jpg",
     },
     {
       name: "Pērs Gints",
+      description: "❤️❤️❤️",
       image: "peerGynt.jpg",
     },
   ],
@@ -114,6 +118,39 @@ const siteData = {
       time: "pirms 50 gadiem",
       title: "Pagājušās nedēļas nogales pārgājiens",
       desc: "Es pametu savus vecākus un iešu dzīvot pie sava mīļā izsumtā Pēra mežā. Es viņu ļoti mīlu, un dzīvošu ar viņu kopā tagad! #woohoo",
+      image: "",
+      likes: 19,
+      comments: [
+        {
+          author: "TODO",
+          text: "todo",
+          avatar:
+            "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80",
+        },
+      ],
+    },
+
+    {
+      author: "Solveiga",
+      time: "pirms 50 gadiem",
+      title: "Pagājušās nedēļas nogales pārgājiens",
+      desc: "Pērs mani pameta un devās savos piedzīvojumos atkal... Es ceru ka viņš drīz atgriezīsies #gaidītāja",
+      image: "",
+      likes: 19,
+      comments: [
+        {
+          author: "TODO",
+          text: "todo",
+          avatar:
+            "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80",
+        },
+      ],
+    },
+    {
+      author: "Solveiga",
+      time: "pirms 50 gadiem",
+      title: "Pagājušās nedēļas nogales pārgājiens",
+      desc: "Pērs beidzot ir atpakaļ! Un beidzot viņa ķermenis ir pārāk vecs lai ceļotu ceļotu prom no manis! #bijavērtsgaidīt50gadus",
       image: "",
       likes: 19,
       comments: [
