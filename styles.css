@@ -604,7 +604,8 @@ h2 {
 
 .post-image {
     display: block;
-    width: 100%;
+    width: calc(100% - 48px);
+    margin: 0 24px;
     max-height: 430px;
     object-fit: cover;
     filter: sepia(0.5) saturate(0.72);
