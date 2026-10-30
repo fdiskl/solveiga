@@ -73,10 +73,9 @@ const siteData = {
       likes: 19,
       comments: [
         {
-          author: "TODO",
-          text: "todo",
-          avatar:
-            "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80",
+          author: "Johans Mugnossons",
+          text: "Solveiga! Es tev aizliedzu ar viņu satikties! Tu zini, ko es par viņu domāju!",
+          avatar: "father.jpg",
         },
       ],
     },
@@ -86,14 +85,13 @@ const siteData = {
       time: "pirms 50 gadiem",
       title: "Pagājušās nedēļas nogales pārgājiens",
       desc: "Tas Pērs aizskrēja ar Ingrīdu! Cita vīra Līgavu! Tas nelietis!",
-      image: "",
-      likes: 19,
+      image: "runhorse.jpg",
+      likes: 21,
       comments: [
         {
-          author: "TODO",
-          text: "todo",
-          avatar:
-            "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80",
+          author: "Johans Mugnossons",
+          text: "Tāpēc arī Tev teicu, ar viņu nerunāt!",
+          avatar: "father.jpg",
         },
       ],
     },
@@ -102,30 +100,32 @@ const siteData = {
       time: "pirms 50 gadiem",
       title: "Pagājušās nedēļas nogales pārgājiens",
       desc: "Es nevaru bez tā Pēra noturēties. Helga man no viņa atnesa skaistu sudraba pogu, un daudzus skaistus vārdus teica. Viņs tomēr arī mani mīl!",
-      image: "",
-      likes: 19,
-      comments: [
-        {
-          author: "TODO",
-          text: "todo",
-          avatar:
-            "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80",
-        },
-      ],
+      image: "talking.jpg",
+      likes: 8,
+      comments: [],
     },
     {
       author: "Solveiga",
       time: "pirms 50 gadiem",
       title: "Pagājušās nedēļas nogales pārgājiens",
       desc: "Es pametu savus vecākus un iešu dzīvot pie sava mīļā izsumtā Pēra mežā. Es viņu ļoti mīlu, un dzīvošu ar viņu kopā tagad! #woohoo",
-      image: "",
-      likes: 19,
+      image: "solveiga_ziabeg.jpg",
+      likes: 13,
       comments: [
         {
-          author: "TODO",
-          text: "todo",
-          avatar:
-            "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80",
+          author: "Johans Mugnossons",
+          text: "Solveiga! Kā tu vari tā pamest savus vecākus?! Nekavējoties nāc mājās!",
+          avatar: "father.jpg",
+        },
+        {
+          author: "Astrida Lunda",
+          text: "Mīļā meitiņ, mēs esam ļoti noraizējušies. Lūdzu, pasaki, ka tev viss ir kārtībā. Mēs tevi mīlam! :(",
+          avatar: "mother.jpg",
+        },
+        {
+          author: "Pērs Gints",
+          text: "Mīlu tevi, Solveiga! Beidzot būsim kopā!",
+          avatar: "peerGynt.jpg",
         },
       ],
     },
@@ -135,30 +135,38 @@ const siteData = {
       time: "pirms 50 gadiem",
       title: "Pagājušās nedēļas nogales pārgājiens",
       desc: "Pērs mani pameta un devās savos piedzīvojumos atkal... Es ceru ka viņš drīz atgriezīsies #gaidītāja",
-      image: "",
-      likes: 19,
+      image: "persbegprom.jpg",
+      likes: 4,
       comments: [
         {
-          author: "TODO",
-          text: "todo",
-          avatar:
-            "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80",
+          author: "Johans Mugnossons",
+          text: "Mēs Tevi brīdinajām!",
+          avatar: "father.jpg",
+        },
+        {
+          author: "Astrida Lunda",
+          text: "Ak tu nabadzīte...",
+          avatar: "mother.jpg",
         },
       ],
     },
     {
       author: "Solveiga",
-      time: "pirms 50 gadiem",
+      time: "pirms 5 minūtēm",
       title: "Pagājušās nedēļas nogales pārgājiens",
-      desc: "Pērs beidzot ir atpakaļ! Un beidzot viņa ķermenis ir pārāk vecs lai ceļotu ceļotu prom no manis! #bijavērtsgaidīt50gadus",
-      image: "",
-      likes: 19,
+      desc: "Mans mīļais @PērsGints ir atpakaļ! Un beidzot viņa ķermenis ir pārāk vecs lai ceļotu prom no manis! #bijavērtsgaidīt50gadus",
+      image: "solveigasklepis.jpg",
+      likes: 100,
       comments: [
         {
-          author: "TODO",
-          text: "todo",
-          avatar:
-            "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80",
+          author: "Helga",
+          text: "Beidzot, varēsies laimīgi dzīvot līdz mūža galam!",
+          avatar: "helga.jpg",
+        },
+        {
+          author: "Pogu lējējs",
+          text: "Tik līdz nākamajam krustojumam....",
+          avatar: "Solid_black.png",
         },
       ],
     },
