@@ -17,8 +17,8 @@ function renderProfile() {
   $("#profileFamily").textContent = profile.family;
   $("#profileWork").textContent = profile.work;
   $("#friendCount").textContent = profile.friends;
-  document.title = `${profile.name} | Social Profile`;
-  $("#photoGrid").innerHTML = siteData.gallery.map((photo) => `<img src="${photo}" alt="Profile gallery image" loading="lazy">`).join("");
+  document.title = `${profile.name} | Sociālais profils`;
+  $("#photoGrid").innerHTML = siteData.gallery.map((photo) => `<img src="${photo}" alt="Profila galerijas attēls" loading="lazy">`).join("");
 }
 
 function avatarStyle(url) {
@@ -31,15 +31,15 @@ function renderPosts() {
       <div class="post-header">
         <div class="avatar" ${avatarStyle(profile.avatar)}></div>
         <div class="post-meta"><strong>${post.author}</strong><span>${post.time} · ◉</span></div>
-        <button class="post-menu" aria-label="Post options">•••</button>
+        <button class="post-menu" aria-label="Ieraksta opcijas">•••</button>
       </div>
       <p class="post-text">${post.text}</p>
-      ${post.image ? `<img class="post-image" src="${post.image}" alt="Image shared by ${post.author}" loading="lazy">` : ""}
-      <div class="post-stats"><span>♡ ${post.likes} likes</span><span>${post.comments.length} comments</span></div>
+      ${post.image ? `<img class="post-image" src="${post.image}" alt="Attēls, ko kopīgoja ${post.author}" loading="lazy">` : ""}
+      <div class="post-stats"><span>♡ ${post.likes} atzīmes Patīk</span><span>${post.comments.length} komentāri</span></div>
       <div class="post-actions">
-        <button class="post-action like-button" data-index="${index}">♡ Like</button>
-        <button class="post-action">◌ Comment</button>
-        <button class="post-action">↗ Share</button>
+        <button class="post-action like-button" data-index="${index}">♡ Patīk</button>
+        <button class="post-action">◌ Komentēt</button>
+        <button class="post-action">↗ Kopīgot</button>
       </div>
       <div class="comments">
         ${post.comments.map((comment) => `
@@ -48,8 +48,8 @@ function renderPosts() {
             <div class="comment-bubble"><strong>${comment.author}</strong>${comment.text}</div>
           </div>`).join("")}
         <form class="comment-form" data-index="${index}">
-          <input aria-label="Write a comment" placeholder="Write a comment..." required>
-          <button type="submit">Post</button>
+          <input aria-label="Rakstīt komentāru" placeholder="Rakstīt komentāru..." required>
+          <button type="submit">Publicēt</button>
         </form>
       </div>
     </article>

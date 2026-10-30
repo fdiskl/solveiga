@@ -1,12 +1,12 @@
 /*
-  EDIT THIS FILE ONLY to change the page content.
+  REDIĢĒJIET TIKAI ŠO FAILU, lai mainītu lapas saturu.
 
-  You can change:
-  - profile details and avatar
-  - gallery image URLs
-  - posts, post images, likes, and comments
+  Varat mainīt:
+  - profila informāciju un avatāru
+  - galerijas attēlu URL adreses
+  - ierakstus, attēlus, atzīmes Patīk un komentārus
 
-  For a post without an image, use: image: ""
+  Ierakstam bez attēla izmantojiet: image: ""
 */
 const siteData = {
   profile: {
@@ -33,21 +33,21 @@ const siteData = {
   posts: [
     {
       author: "Alex Morgan",
-      time: "2 hrs",
-      text: "There is something special about a quiet morning by the coast. Grateful for slow days and good company. 🌊",
+      time: "pirms 2 stundām",
+      text: "Klusā rītā piekrastē ir kaut kas īpašs. Esmu pateicīgs par nesteidzīgām dienām un labu kompāniju. 🌊",
       image:
         "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1100&q=85",
       likes: 126,
       comments: [
         {
           author: "Jamie Morgan",
-          text: "This view was even better in person!",
+          text: "Klātbūtnē šis skats bija vēl labāks!",
           avatar:
             "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&q=80",
         },
         {
           author: "Taylor Reed",
-          text: "Absolutely beautiful, Alex.",
+          text: "Brīnišķīgi skaisti, Aleks!",
           avatar:
             "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&q=80",
         },
@@ -55,15 +55,15 @@ const siteData = {
     },
     {
       author: "Alex Morgan",
-      time: "Yesterday",
-      text: "A few frames from last weekend's hike. Which one is your favorite?",
+      time: "Vakar",
+      text: "Daži kadri no pagājušās nedēļas nogales pārgājiena. Kurš tev patīk vislabāk?",
       image:
         "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1100&q=85",
       likes: 89,
       comments: [
         {
           author: "Chris Patel",
-          text: "The mountain reflection is stunning.",
+          text: "Kalnu atspulgs ir satriecošs.",
           avatar:
             "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80",
         },
